@@ -1,0 +1,14 @@
+.sounds {
+   margin-top: 40px;
+   width: 100%;
+}
+
+
+.sounds {
+   height: 300px;
+   min-height: 200px;
+   max-height: 600px;
+   max-width: 710px;
+   overflow-y: scroll;
+   resize: vertical;
+}

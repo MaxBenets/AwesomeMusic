@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Verdana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(23, 163, 10, 0.716);
+  color: #000;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(23, 163, 10, 0.716);
+}
+
+.App {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.main {
+  margin-top: 70px;
+  flex: 4;
+  width: 100%;
+}
+
+.h1 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 52px;
+  letter-spacing: 0.205em;
+  color: #000000;
+}
+
+.about {
+  color: #343434;
+  margin-top: 15px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.active {
+  border-bottom: 2px solid #000;
+}
+
+@media (max-width: 700px) {
+  .App {
+    flex-direction: column-reverse;
+  }
+
+  .main {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 100px;
+  }
+}

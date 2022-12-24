@@ -1,0 +1,42 @@
+:root{
+   --elems-padding: 10px;
+   --elems-main-color: #73D877;
+   --elems-main-hover-color: #6dc970;
+   --elems-br: 5px
+}
+
+.form{
+   width: 100%;
+   max-width: 600px;
+   margin-top: 100px;
+   display: flex;
+}
+.input{
+   padding: var(--elems-padding);
+   width: 100%;
+   outline: 0;
+   border: 1px solid var(--elems-main-color);
+   border-top-left-radius: var(--elems-br);
+   border-bottom-left-radius: var(--elems-br);
+   border-right: 0;
+}
+.input:focus{
+   border: 1px solid var(--elems-main-hover-color);
+   border-right: 0;
+}
+.buttonAdd{
+   padding: var(--elems-padding);
+   padding-left: 20px;
+   padding-right: 20px;
+   border: 1px solid var(--elems-main-color);
+   border-left: 0;
+   background: var(--elems-main-color);
+   border-top-right-radius: var(--elems-br);
+   border-bottom-right-radius: var(--elems-br);
+   cursor: pointer;
+}
+.buttonAdd:hover{
+   background: var(--elems-main-hover-color);
+   border: 1px solid var(--elems-main-hover-color);
+   border-left: 0;
+}
